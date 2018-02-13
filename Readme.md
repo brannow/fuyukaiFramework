@@ -13,8 +13,8 @@ FuyukaiPHP aims for Fast but secure PHP framework
 ## What do you need
 * Apache/nginx (NOTE: currently only apache tested... if u have trouble, check index.php)
 * mod_rewirte
-* >=PHP7.1 (tested only on PHP7.2)
-* >=MYSQL5.6
+* \>=PHP7.1 (tested only on PHP7.2)
+* \>=MYSQL5.6
 
 ## Yet another Framework?
 simply, if you need a simple php aplication like a OnePager with Forms, API, or other simple Tasks.
