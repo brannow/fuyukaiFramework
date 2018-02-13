@@ -24,6 +24,25 @@ Supports currently 2 Commands:
 * Replace a placeholder with a assigned value ```{@replacePlaceholder}``` 
 * Base Template will be overwritten by template itself ```{@base:/Resources/Template/base.html}```
 
+## CLI
+CLI are speerated from the Webservice calls (own routing/ no html output / no ViewLoading)    
+If you want to use cli calls like:
+
+``` php www/mining/cli.php --key K3Pgjt6794A47qe43y8X --cmd fancy-cronjob-stuff ```
+
+Add the cmd `fancy-cronjob-stuff` to the Config.php
+
+```
+    private static $cliRouting = [
+        'fancy-cronjob-stuff' => [
+            self::CONTROLLER => 'Src\CLI\Test\Controller\UpdateStuffController',
+            self::METHOD => 'updateAction'
+        ]
+    ];
+```
+
+Use CliController as BaseController for your Src-Controller for better Performance
+
 ## vhost
 
 ```FUYUKAI_ENV``` can be "dev" or "prod" (prod is default if nothing is set)      
