@@ -88,7 +88,12 @@ abstract class BaseRepository
             if (is_array($value)) {
                 $whereLine[] = 't1.`'.$column.'` IN ('. implode(',', $value) .')';
             } else {
-                $whereLine[] = 't1.`'.$column.'`=?';
+                if ($value === null) {
+                    $whereLine[] = 't1.`'.$column.'` IS NULL';
+                } else {
+                    $whereLine[] = 't1.`'.$column.'`=?';
+                    $params[] = $value;
+                }
             }
             $params[] = $value;
         }
@@ -160,8 +165,13 @@ abstract class BaseRepository
                     if ($value instanceof \DateTime) {
                         $value = $value->format(static::MYSQL_DATETIME_FORMAT);
                     }
-                    $whereParams[] = $value;
-                    $whereLine[] = '`'.$w.'`=?';
+                    
+                    if ($value === null) {
+                        $whereLine[] = '`'.$w.'` IS NULL';
+                    } else {
+                        $whereLine[] = '`'.$w.'`=?';
+                        $whereParams[] = $value;
+                    }
                 }
             }
             
