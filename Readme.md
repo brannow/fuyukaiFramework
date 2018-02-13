@@ -26,7 +26,7 @@ Supports currently 2 Commands:
 
 ## vhost
 
-```FUYUKAI_ENV``` can be "dev" or "prod" (prod is default if nothing is set)
+```FUYUKAI_ENV``` can be "dev" or "prod" (prod is default if nothing is set)      
 Rewirte condition for Resources is kinda important ;)
 
 ```
