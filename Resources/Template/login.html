@@ -1,0 +1,24 @@
+{@base:/Resources/Template/base.html}
+
+<div class="centerWrapper">
+    <div class="box middleBox">
+        <div class="header">
+            Login
+        </div>
+
+        <div class="flashMessage">{@flashMessage}</div>
+
+        <form autocomplete="off" class="loginForm action-form" method="post">
+            <input type="hidden" name="__RequestVerificationToken" value="{@__RequestVerificationToken}">
+            <div>
+                <label for="username">Username</label>
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" autofocus="autofocus" id="username" name="username" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
