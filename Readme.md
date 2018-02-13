@@ -17,7 +17,7 @@ FuyukaiPHP aims for Fast but secure PHP framework
 * \>=MYSQL5.6
 
 ## Yet another Framework?
-simply, if you need a simple php aplication like a OnePager with Forms, API, or other simple Tasks.
+simply, if you need a simple php application like a OnePager with Forms, API, or other simple Tasks.
 
 ## Template "Engine"
 Supports currently 2 Commands:
