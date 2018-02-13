@@ -49,4 +49,4 @@ $RECYCLE.BIN/
 *.lnk
 
 #phpstorm
-#.idea
+.idea
