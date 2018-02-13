@@ -19,7 +19,7 @@ FuyukaiPHP aims for Fast but secure PHP framework
 ## Yet another Framework?
 simply, if you need a simple php aplication like a OnePager with Forms, API, or other simple Tasks.
 
-# Template "Engine"
+## Template "Engine"
 Supports currently 2 Commands:
 * Replace a placeholder with a assigned value ```{@replacePlaceholder}``` 
 * Base Template will be overwritten by template itself ```{@base:/Resources/Template/base.html}```
