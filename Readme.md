@@ -41,7 +41,8 @@ Add the cmd `fancy-cronjob-stuff` to the Config.php
     ];
 ```
 
-Use CliController as BaseController for your Src-Controller for better Performance
+Use CliController as BaseController for your Src-Controller for better Performance    
+notice: update the "key" in cli.php if you want, I added this for a better sleep at night, but let be honest this key is useless, if some "bad" ppl have direct access to your code, you have far more important problems as this key :)
 
 ## vhost
 
