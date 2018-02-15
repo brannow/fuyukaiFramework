@@ -28,7 +28,7 @@ Supports currently 2 Commands:
 CLI are speerated from the Webservice calls (own routing/ no html output / no ViewLoading)    
 If you want to use cli calls like:
 
-``` php www/mining/cli.php --key K3Pgjt6794A47qe43y8X --cmd fancy-cronjob-stuff ```
+```　php cli.php --key K3Pgjt6794A47qe43y8X --cmd fancy-cronjob-stuff ```
 
 Add the cmd `fancy-cronjob-stuff` to the Config.php
 
